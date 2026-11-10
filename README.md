@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Flint](screenshot.png)
 
-Flint is a small, characterful filter: one 12 dB/oct low pass or high pass with a resonant peak that runs up to self-oscillation, a saturating input stage and an envelope follower on the cutoff. It was written from scratch; no third-party code, presets or artwork are included.
+Flint is a small, characterful filter: one 12 dB/oct low pass or high pass with a resonant peak that runs up to self-oscillation, a saturating input stage and an envelope follower on the cutoff. It was written from scratch: the DSP, interface and presets are original work, and third-party components (such as the DPF framework) are listed under [License](#license).
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth). Flint uses Monolith's filter.
