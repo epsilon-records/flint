@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Flint](screenshot.png)
 
-Flint is a clean-room design with the feature set of FabFilter Micro, FabFilter's eighth plugin (January 2010). Micro was a lightweight single filter built on the filter first developed for FabFilter One. Flint was written from scratch, working only from FabFilter's public press release, product page and online help. No FabFilter code, binaries, presets, artwork or trademarks were used.
+Flint is a small, characterful filter: one 12 dB/oct low pass or high pass with a resonant peak that runs up to self-oscillation, a saturating input stage and an envelope follower on the cutoff. It was written from scratch; no third-party code, presets or artwork are included.
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth). Flint uses Monolith's filter.
@@ -67,22 +67,7 @@ xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/*/Flint*
 - **Hover tips** on every control, plus a **HELP window**.
 - **[Full manual](docs/MANUAL.md)**, also in every release zip as `Flint-Manual.html`.
 
-### Compared with FabFilter Micro (2010)
-
-| Micro | Flint |
-|---|---|
-| One filter based on the FabFilter One filter | ✓ Monolith's filter (this family's One) |
-| Low pass and high pass, 12 dB/oct | ✓ |
-| Peak up to self-oscillation, saturating at full resonance | ✓ |
-| Envelope follower on cutoff, either direction (EF Level, EF Speed, EF light) | ✓ plus the live curve and reach bar in the display |
-| Separate input and output gain driving the saturation | ✓ |
-| Interactive filter display | ✓ |
-| Interactive MIDI Learn, undo/redo, A/B switch | ✓ |
-| Smart parameter interpolation, sample-accurate automation | ✓ |
-| Help file with interactive hints | ✓ hover tips, in-plugin help pages and full manual |
-| Scalable interface | ✓ resizable |
-| Factory presets (none listed for Micro) | 24 factory presets plus user presets |
-| Pro Tools (RTAS/AAX) | Not supported (needs Avid's SDK and signing) |
+Not supported: Pro Tools (AAX).
 
 ## Build from source
 
@@ -135,5 +120,3 @@ New parameters are only ever appended, so saved sessions and automation keep wor
 ## License
 
 [MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) and its bundled NanoVG, which are under the ISC license. `plugins/Flint/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
-
-"FabFilter" and "FabFilter Micro" are trademarks of FabFilter Software Instruments. Flint is not affiliated with or endorsed by FabFilter.
